@@ -1,0 +1,77 @@
+@media (max-width:1200px){
+    .container{
+        width: 1000px;
+    }
+    .header__left span{
+        font-size: 12px !important;
+        margin-left: 50px;
+    }
+    .header__left a{
+        font-size: 16px !important;
+        margin-left: 50px;
+    }
+    .header__container.container{
+        column-gap: 0;
+    }
+    header input{
+        margin: 0 80px 0 80px;
+    }
+    .header__button::after{
+        display: none !important;
+    }
+    .header__right p{
+        margin-right: 40px;
+    }
+    .banner__center .banner__left_box::before{
+        display: none !important;
+    }
+    .banner__center .banner__right_box::after{
+        display: none !important;
+    }
+    .banner__left_text{
+        margin-top: 60px;
+        font-size: 30px !important;
+        line-height: 120% !important;
+    }
+    .banner__left_text.bottom{
+        font-size: 13px !important;
+        line-height: 140% !important;
+        margin-bottom: 190px !important;
+    }
+    .banner__bottom_box1{
+        width: 280px !important;
+    }
+    .banner__bottom_box2{
+        width: 220px !important;
+    }
+    .banner__bottom_box3{
+        width: 220px !important;
+    }
+    .banner__bottom_box4{
+        width: 220px !important;
+    }
+    .discounts__bottom{
+        column-gap: 0 !important;
+    }
+    .new__bottom{
+        column-gap: 0 !important;
+    }
+    .popular__bottom{
+        column-gap: 0 !important;
+    }
+    .footer__right_gery::before{
+        display: none !important;
+    }
+    .footer__bottom p::after{
+        display: none !important;
+    }
+    .discounts .discounts__top .discounts__top_text.right::after{
+        display: none !important;
+    }
+    .new .new__top .new__top_text.right::after{
+        display: none !important;
+    }
+    .popular__product .popular__top .popular__top_text.right::after{
+        display: none !important;
+    }
+}

@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search</title>
+    <link rel="stylesheet" href="search.css">
+    <link rel="stylesheet" href="media.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__top">
+                <a href="../index.html"><img src="imgs/image 1.png" alt=""></a>
+                <div class="free__call">
+                    <p>Бесплатный звонок </p>
+                    <span>8 800 080 5011</span>
+                </div>
+                <div class="input">
+                    <input type="text" placeholder="Поиск товаров">
+                </div>
+                <div class="geo">
+                    <span>ЕЦ-166/4</span>
+                    <p>Нур-Султан</p>
+                </div>
+                <button onclick="showLogin()">Войти</button>
+            </div>
+            <div class="login">
+                <div class="login__header">
+                    <img src="imgs/image 1.png" alt="">
+                    <div class="login__right">
+                        <p>Назад на главную</p>
+                        <img onclick="showLogin()" src="imgs/Group 177.png" alt="">
+                    </div>
+                </div>
+                <h2>Вход</h2>
+                <div class="login__center">
+                    <h4>Логин</h4>
+                    <input type="text" placeholder="Введите ваш логин">
+                </div>
+                <div class="login__center">
+                    <h4>Пароль</h4>
+                    <input type="password" placeholder="Введите пароль">
+                </div>
+                <button>Войти</button>
+                <span>или</span>
+                <button onclick="showRegister()" class="register__button">Зарегистрироваться</button>
+                <p>Забыли пароль?</p>
+            </div>
+            <div onclick="showBurger()" class="burger"></div>
+            <div class="burger__box"></div>
+            <div class="register">
+                <div class="register__header">
+                    <img src="imgs/image 1.png" alt="">
+                    <div class="register__right">
+                        <p>Назад на главную</p>
+                        <img onclick="showRegister()" src="imgs/Group 177.png" alt="">
+                    </div>
+                </div>
+                <h2>Регистрация</h2>
+                <div class="register__center">
+                    <h4>Фамилия*</h4>
+                    <input type="text" placeholder="Введите фамилию">
+                </div>
+                <div class="register__center">
+                    <h4>Имя*</h4>
+                    <input type="text" placeholder="Введите ваше имя">
+                </div>
+                <div class="register__center">
+                    <h4>Пол*</h4>
+                    <input type="text" placeholder="Выберите пол">
+                </div>
+                <div class="register__center">
+                    <h4>Спецучреждение</h4>
+                    <input type="text" placeholder="ЕЦ-166/4">
+                </div>
+                <label><input type="checkbox">Я подтверждаю, что ознакомлен и согласен с условиями<br> публичной оферты электронного магазина Convex</label>
+                <button>Регистрация</button>
+            </div>
+            <div class="header__bottom">
+                <ul>
+                    <li>Продукты</li>
+                    <li>Еда быстрого приготовления</li>
+                    <li>Консервы</li>
+                    <li>Напитки</li>
+                    <li>Бытовая химия</li>
+                    <li>Уход за собой</li>
+                    <li>Еще</li>
+                </ul>
+                <div class="cart__container">
+                    <div>
+                        <div class="cart__text">Корзина</div>
+                        <div class="cart__price">2 400 г.</div>
+                    </div>
+                    <div class="cart__count">12</div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="products">
+            <div class="container">
+                <div class="products__main">
+                    <div class="conservs">
+                        <p>Главная / Еда / Консервы </p>
+                        <h2>Консервы</h2>
+                        <span>Стоимость в тенге</span>
+                        <div class="price">
+                            <p>от</p>
+                            <input type="text" placeholder="0 тг">
+                            <p>до</p>
+                            <input type="text" placeholder="0 тг">
+                        </div>
+                        <span>Вес (грамм)</span>
+                        <div class="price">
+                            <p>от</p>
+                            <input type="text" placeholder="0 тг">
+                            <p>до</p>
+                            <input type="text" placeholder="0 тг">
+                        </div>
+                        <label><input type="checkbox">Акции</label>
+                        <label><input type="checkbox">В наличии</label>
+                        <label><input type="checkbox">Популярные товары</label>
+                        <label><input type="checkbox">Новинки</label>
+                        <button class="apply">Применить</button>
+                        <button>Сбросить</button>
+                    </div>
+                    <div class="product__right">
+                        <div class="right__main">
+                            <div class="product__card">
+                                <img src="imgs/Tushenka.png" alt="">
+                                <h5>Конина тушеная Улан, есть <br> возможность в 2 строки</h5>
+                                <p>В наличии: 11 шт.</p><span>Вес: 130гр</span>
+                                <div class="button">
+                                    <div>
+                                        <p>28 030 тг.</p>
+                                        <span>24 320 тг.</span>
+                                    </div>
+                                    <button>В корзину</button>
+                                </div>
+                            </div>
+                            <div class="product__card">
+                                <img src="imgs/Tushenka.png" alt="">
+                                <h5>Конина тушеная Улан, есть <br> возможность в 2 строки</h5>
+                                <p>В наличии: 11 шт.</p><span>Вес: 130гр</span>
+                                <div class="button">
+                                    <div>
+                                        <p>28 030 тг.</p>
+                                        <span>24 320 тг.</span>
+                                    </div>
+                                    <button>В корзину</button>
+                                </div>
+                            </div>
+                            <div class="product__card">
+                                <img src="imgs/Tushenka.png" alt="">
+                                <h5>Конина тушеная Улан, есть <br> возможность в 2 строки</h5>
+                                <p>В наличии: 11 шт.</p><span>Вес: 130гр</span>
+                                <div class="button">
+                                    <div>
+                                        <p>28 030 тг.</p>
+                                        <span>24 320 тг.</span>
+                                    </div>
+                                    <button>В корзину</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="right__main">
+                            <div class="product__card">
+                                <img src="imgs/Tushenka.png" alt="">
+                                <h5>Конина тушеная Улан, есть <br> возможность в 2 строки</h5>
+                                <p>В наличии: 11 шт.</p><span>Вес: 130гр</span>
+                                <div class="button">
+                                    <div>
+                                        <p>28 030 тг.</p>
+                                        <span>24 320 тг.</span>
+                                    </div>
+                                    <button>В корзину</button>
+                                </div>
+                            </div>
+                            <div class="product__card">
+                                <img src="imgs/Tushenka.png" alt="">
+                                <h5>Конина тушеная Улан, есть <br> возможность в 2 строки</h5>
+                                <p>В наличии: 11 шт.</p><span>Вес: 130гр</span>
+                                <div class="button">
+                                    <div>
+                                        <p>28 030 тг.</p>
+                                        <span>24 320 тг.</span>
+                                    </div>
+                                    <button>В корзину</button>
+                                </div>
+                            </div>
+                            <div class="product__card">
+                                <img src="imgs/Tushenka.png" alt="">
+                                <h5>Конина тушеная Улан, есть <br> возможность в 2 строки</h5>
+                                <p>В наличии: 11 шт.</p><span>Вес: 130гр</span>
+                                <div class="button">
+                                    <div>
+                                        <p>28 030 тг.</p>
+                                        <span>24 320 тг.</span>
+                                    </div>
+                                    <button>В корзину</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="right__main">
+                            <div class="product__card">
+                                <img src="imgs/Tushenka.png" alt="">
+                                <h5>Конина тушеная Улан, есть <br> возможность в 2 строки</h5>
+                                <p>В наличии: 11 шт.</p><span>Вес: 130гр</span>
+                                <div class="button">
+                                    <div>
+                                        <p>28 030 тг.</p>
+                                        <span>24 320 тг.</span>
+                                    </div>
+                                    <button>В корзину</button>
+                                </div>
+                            </div>
+                            <div class="product__card">
+                                <img src="imgs/Tushenka.png" alt="">
+                                <h5>Конина тушеная Улан, есть <br> возможность в 2 строки</h5>
+                                <p>В наличии: 11 шт.</p><span>Вес: 130гр</span>
+                                <div class="button">
+                                    <div>
+                                        <p>28 030 тг.</p>
+                                        <span>24 320 тг.</span>
+                                    </div>
+                                    <button>В корзину</button>
+                                </div>
+                            </div>
+                            <div class="product__card">
+                                <img src="imgs/Tushenka.png" alt="">
+                                <h5>Конина тушеная Улан, есть <br> возможность в 2 строки</h5>
+                                <p>В наличии: 11 шт.</p><span>Вес: 130гр</span>
+                                <div class="button">
+                                    <div>
+                                        <p>28 030 тг.</p>
+                                        <span>24 320 тг.</span>
+                                    </div>
+                                    <button>В корзину</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__top">
+                <ul>
+                    <li>О компании</li>
+                    <li>Вопрос-Ответ</li>
+                    <li>Новости</li>
+                    <li>Контакты</li>
+                    <li>Пополнение баланса</li>
+                </ul>
+                <div class="top__right">
+                    <p>Бесплатно по Казахстану</p>
+                    <span>8 800 080 50 11 <br>8 727 225 50 11</span>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <ul>
+                    <li>2019 © Convex</li>
+                    <li>Политика конфиденциальности</li>
+                    <li>Публичная оферта</li>
+                    <li>Условия возврата</li>
+                </ul>
+                <div class="footer__icons">
+                    <img src="imgs/Group 3 (1).png" alt="">
+                    <img src="imgs/Group 4.png" alt="">
+                    <img src="imgs/Twitter.png" alt="">
+                </div>
+                <img src="imgs/age-limit 1.png" alt="">
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="js.js"></script>
+</body>
+
+</html>
