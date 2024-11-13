@@ -15,14 +15,9 @@ $text-grey: #a9a9a9ae;
     display: flex;
     column-gap: 55px;
 }
-
 a{
     color: black;
     text-decoration: none;
-}
-
-ul li:hover{
-    text-shadow: 0 0 10px;
 }
 
 header{
@@ -238,6 +233,9 @@ header{
 }
 
 .banner{
+    .banner__list.black:hover{
+        text-shadow: 0 0 10px;
+    }
     .banner__top{
         display: flex;
         padding: 20px 0 28px;
@@ -875,5 +873,8 @@ footer{
         width: 1210px;
         left: -1050px;
         top: -19px;
+    }
+    .footer__black:hover{
+        text-shadow: 0 0 10px;
     }
 }

@@ -27,10 +27,6 @@ a {
   text-decoration: none;
 }
 
-ul li:hover {
-  text-shadow: 0 0 10px;
-}
-
 header {
   padding: 24px;
 }
@@ -246,6 +242,9 @@ header .header__reg .header__reg_h5.center {
   margin: 30px 0 10px 10px;
 }
 
+.banner .banner__list.black:hover {
+  text-shadow: 0 0 10px;
+}
 .banner .banner__top {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -948,4 +947,7 @@ footer .footer__bottom p::after {
   width: 1210px;
   left: -1050px;
   top: -19px;
+}
+footer .footer__black:hover {
+  text-shadow: 0 0 10px;
 }

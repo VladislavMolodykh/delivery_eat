@@ -2,12 +2,12 @@
     .container{
         width: 1000px;
     }
-    .header__left span{
-        font-size: 12px !important;
+    header .header__left span{
+        font-size: 10px;
         margin-left: 50px;
     }
-    .header__left a{
-        font-size: 16px !important;
+    header .header__left a{
+        font-size: 16px;
         margin-left: 50px;
     }
     .header__container.container{
@@ -16,62 +16,229 @@
     header input{
         margin: 0 80px 0 80px;
     }
-    .header__button::after{
-        display: none !important;
+    header .header__button::after{
+        display: none;
     }
     .header__right p{
         margin-right: 40px;
     }
-    .banner__center .banner__left_box::before{
-        display: none !important;
+    .banner .banner__center .banner__left_box::before{
+        display: none;
     }
-    .banner__center .banner__right_box::after{
-        display: none !important;
+    .banner .banner__center .banner__right_box::after{
+        display: none;
     }
-    .banner__left_text{
+    .banner .banner__center .banner__left_box .banner__left_text{
         margin-top: 60px;
-        font-size: 30px !important;
-        line-height: 120% !important;
+        font-size: 30px;
+        line-height: 120%;
     }
-    .banner__left_text.bottom{
-        font-size: 13px !important;
-        line-height: 140% !important;
-        margin-bottom: 190px !important;
+    .banner .banner__center .banner__left_box .banner__left_text.bottom{
+        font-size: 13px;
+        line-height: 140%;
+        margin-bottom: 190px;
     }
-    .banner__bottom_box1{
-        width: 280px !important;
+    .banner .banner__bottom .banner__bottom_box1{
+        width: 280px;
     }
-    .banner__bottom_box2{
-        width: 220px !important;
+    .banner .banner__bottom .banner__bottom_box2{
+        width: 220px;
     }
-    .banner__bottom_box3{
-        width: 220px !important;
+    .banner .banner__bottom .banner__bottom_box3{
+        width: 220px;
     }
-    .banner__bottom_box4{
-        width: 220px !important;
+    .banner .banner__bottom .banner__bottom_box4{
+        width: 220px;
     }
-    .discounts__bottom{
-        column-gap: 0 !important;
+    .discounts .discounts__bottom{
+        column-gap: 0;
     }
-    .new__bottom{
-        column-gap: 0 !important;
+    .new .new__bottom{
+        column-gap: 0;
     }
-    .popular__bottom{
-        column-gap: 0 !important;
+    .popular .popular__bottom{
+        column-gap: 0;
     }
-    .footer__right_gery::before{
-        display: none !important;
+    .popular__product .popular__bottom{
+        column-gap: 0;
     }
-    .footer__bottom p::after{
-        display: none !important;
+    footer .footer__right_gery::before{
+        display: none;
+    }
+    footer .footer__bottom p::after{
+        display: none;
     }
     .discounts .discounts__top .discounts__top_text.right::after{
-        display: none !important;
+        display: none;
     }
     .new .new__top .new__top_text.right::after{
-        display: none !important;
+        display: none;
     }
     .popular__product .popular__top .popular__top_text.right::after{
-        display: none !important;
+        display: none;
+    }
+}
+
+@media (max-width:868px){
+    .container{
+        width: 668px;
+    }
+    header .header__left span{
+        font-size: 8px;
+        margin-left: 5px;
+
+    }
+    header .header__left a{
+        font-size: 8px;
+        margin-left: 5px;
+    }
+    .header__container.container{
+        column-gap: 0;
+    }
+    header input{
+        margin: 0 10px 0 10px;
+    }
+    header .header__button::after{
+        display: none;
+    }
+    .header__right p{
+        margin-right: 10px;
+    }
+    .banner .banner__top ul{
+        column-gap: 20px;
+    }
+    .banner .banner__top .banner__basket{
+        margin-left: 80px;
+    }
+    .banner .banner__top .banner__list{
+        font-size: 9px;
+    }
+    .banner .banner__center .banner__left_box::before{
+        display: none;
+    }
+    .banner .banner__center .banner__right_box::after{
+        display: none;
+    }
+    .banner .banner__center .banner__left_box .banner__left_text{
+        margin-top: 40px;
+        font-size: 30px;
+        line-height: 120%;
+    }
+    .banner .banner__center .banner__left_box .banner__left_text.bottom{
+        font-size: 13px;
+        line-height: 140%;
+        margin-bottom: 120px;
+    }
+    .banner .banner__bottom{
+        column-gap: 5px;
+    }
+    .banner .banner__bottom .banner__bottom_box1{
+        width: 170px;
+    }
+    .banner__bottom .banner__bottom_box1 img{
+        width: 150px;
+        height: 95px;
+    }
+    .banner .banner__bottom .banner__bottom_box2{
+        width: 160px;
+    }
+    .banner__bottom .banner__bottom_box2 img{
+        width: 130px;
+        height: 120px;
+    }
+    .banner .banner__bottom .banner__bottom_box3{
+        width: 160px;
+    }
+    .banner__bottom .banner__bottom_box3 img{
+        width: 50px;
+        height: 90px;
+    }
+    .banner .banner__bottom .banner__bottom_box4{
+        width: 160px;
+    }
+    .banner .banner__bottom .banner__bottom_box4 img{
+        width: 140px;
+        height: 140px;
+    }
+    .discounts .discounts__bottom .discounts__product1{
+        width: 170px;
+    }
+    .discounts .discounts__bottom .discounts__product1 .discounts__product1_button p{
+        font-size: 16px;
+    }
+    .discounts .discounts__bottom .discounts__product1 .discounts__product1_button .button1::before{
+        left: 6px;
+    }
+    .discounts .discounts__bottom .discounts__product1 .discounts__product1_button .button1::after{
+        left: 65px;
+    }
+    .discounts .discounts__bottom .discounts__product1 img{
+        width: 160px;
+        height: 130px;
+    }
+    .discounts .discounts__bottom{
+        column-gap: 0;
+    }
+    .new .new__bottom{
+        column-gap: 0;
+    }
+    .new .new__bottom .new__product1{
+        width: 170px;
+    }
+    .new .new__bottom .new__product1 .new__product1_button p{
+        font-size: 16px;
+    }
+    .new .new__bottom .new__product1 img{
+        width: 160px;
+        height: 130px;
+    }
+    .popular .popular__bottom{
+        column-gap: 0;
+    }
+    .popular .popular__bottom .popular__product1{
+        width: 170px;
+    }
+    .popular .popular__bottom .popular__product1 .popular__product1_button p{
+        font-size: 16px;
+    }
+    .popular .popular__bottom .popular__product1 img{
+        width: 160px;
+        height: 130px;
+    }
+    .popular__product .popular__bottom{
+        column-gap: 0;
+    }
+    .popular__product .popular__bottom .popular__product1{
+        width: 170px;
+    }
+    .popular__product .popular__bottom .popular__product1 .popular__product1_button p{
+        font-size: 16px;
+    }
+    .popular__product .popular__bottom .popular__product1 img{
+        width: 160px;
+        height: 130px;
+    }
+    footer .footer__right_gery::before{
+        display: none;
+    }
+    footer .footer__bottom p::after{
+        display: none;
+    }
+    .discounts .discounts__top .discounts__top_text.right::after{
+        display: none;
+    }
+    .new .new__top .new__top_text.right::after{
+        display: none;
+    }
+    .popular__product .popular__top .popular__top_text.right::after{
+        display: none;
+    }
+    footer .footer__top ul{
+        font-size: 13px;
+        column-gap: 40px;
+    }
+    footer .footer__bottom ul{
+        column-gap: 10px;
+        font-size: 10px;
     }
 }
