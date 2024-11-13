@@ -6,6 +6,7 @@
     <title>Delivery eat</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="media.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 <body>
     <div id="top"></div>
@@ -69,14 +70,25 @@
                     </div>
                 </div>
             </div>
-            <div class="banner__center">
-                <div id="center"></div>
-                <div class="banner__left_box">
-                    <p class="banner__left_text">Всегда свежие молочные продукты</p>
-                    <p class="banner__left_text bottom">Только качественные товары, за которыми мы <br> всегда следим</p>
-                    <button>Подробнее</button>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="image/car.png" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="image/progress.png" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img class="swiperBack" src="image/backswiper.png" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="image/car.png" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="image/progress.png" />
+                  </div>
                 </div>
-                <div class="banner__right_box"></div>
+                <div class="swiper-pagination"></div>
             </div>
             <div class="banner__bottom">
                 <div class="banner__bottom_box1">
@@ -364,5 +376,24 @@
         </div>
     </footer>
     <script src="js.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+          effect: "coverflow",
+          grabCursor: true,
+          centeredSlides: true,
+          slidesPerView: "auto",
+          coverflowEffect: {
+            rotate: 50,
+            stretch: 0,
+            depth: 100,
+            modifier: 1,
+            slideShadows: true,
+          },
+          pagination: {
+            el: ".swiper-pagination",
+          },
+        });
+      </script>
 </body>
 </html>

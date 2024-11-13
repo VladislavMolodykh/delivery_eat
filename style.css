@@ -316,72 +316,16 @@ header .header__reg .header__reg_h5.center {
   padding: 8px;
   cursor: pointer;
 }
-.banner .banner__center {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.banner .swiper.mySwiper {
+  width: 1200px;
+  height: 600px;
+  border-radius: 50px;
 }
-.banner .banner__center .banner__left_box {
-  width: 400px;
-  height: 500px;
-  background: #46c578;
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
-  -webkit-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2117647059);
-          box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2117647059);
-  padding: 0px 0 40px 30px;
-  position: relative;
+.banner .swiper.mySwiper img {
+  width: 1200px;
 }
-.banner .banner__center .banner__left_box::before {
-  content: "";
-  display: block;
-  position: relative;
-  background: url(image/Arrow\ button.png) center/cover no-repeat;
-  width: 70px;
-  height: 70px;
-  left: -65px;
-  bottom: -220px;
-  cursor: pointer;
-}
-.banner .banner__center .banner__right_box {
-  width: 800px;
-  height: 500px;
-  background: url(image/car.png) center/cover no-repeat;
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
-  -webkit-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2117647059);
-          box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2117647059);
-}
-.banner .banner__center .banner__right_box::after {
-  content: "";
-  display: block;
-  position: relative;
-  background: url(image/Arrow\ button\ \(1\).png) center/cover no-repeat;
-  width: 70px;
-  height: 70px;
-  right: -762px;
-  bottom: -210px;
-  cursor: pointer;
-}
-.banner .banner__center .banner__left_box .banner__left_text {
-  color: white;
-  font-size: 26px;
-  line-height: 150%;
-}
-.banner .banner__center .banner__left_box .banner__left_text.bottom {
-  color: rgba(255, 255, 255, 0.489);
-  font-size: 16px;
-  margin: 20px 0 155px;
-}
-.banner .banner__center .banner__left_box button {
-  width: 165px;
-  height: 45px;
-  background: none;
-  color: white;
-  border: 2px solid white;
-  border-radius: 15px;
-  margin-left: 10px;
-  cursor: pointer;
+.banner .swiper.mySwiper .swiperBack {
+  height: 600px;
 }
 .banner .banner__bottom {
   display: -webkit-box;
